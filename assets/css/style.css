@@ -10,61 +10,48 @@ body {
  
 }
 
-/* panel styles */
-.panel {
-  /* min height incase content is higher than window height */
+/* Section intro Paper */
+.paper {
+  background-image: url("../img/paper-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Sellos/Iconos */
+section.section-iconos {
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly !important;
   align-items: center;
-  font-family: sans-serif;
-  scroll-snap-align: start;
-  /* outline: 10px solid hotpink; */
-  /* turn above on to see the edge of panels */
+  margin-top: 75px !important;
+
 }
 
-/* colours */
-.color-green {
-  background-color: #c4cf2c;
-}
-.color-blue {
-  background-color: #98c9d4;
-}
-.color-orange {
-  background-color: #ef7c2d;
-}
-.color-violet {
-  background-color: #7A4EAB;
-}
-
-/* styling for demo, can ignore */
-body {
-  text-align: center;
-  font-size: 120%;
-  line-height: 1.618;
-}
-h1, h2 {
-  font-size: 36px;
-  letter-spacing: -0.05em;
-  line-height: 1.1;
-}
-p {
-  max-width: 30em;
-  margin-bottom: 1.618em;
-}
-a {
-  color: #4332CF;
+.sellos {
+  width: 150px;
 }
 
 img.logo {
-  width: 25%;
+  width: 50%;
+  margin: auto;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
   img.logo {
     width: 50%;
+    margin: auto;
+    display: block;
   }
   h1, h2 {
     font-size: 18px;
+  }
+  .sellos {
+    width: 75px;
   }
 }
