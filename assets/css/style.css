@@ -6,8 +6,7 @@ html {
 body {
   color: #000;
   background-color: #f4f4f4;
-  transition: background-color 1s ease;
- 
+  transition: background-color 0.1s ease-in-out;
 }
 
 /* Section intro Paper */
@@ -21,6 +20,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+section#1, section#2, section#3, section#4, section#5, section#intro {
+  height: 100vh;
+}
+
+
 
 /* Section Sellos/Iconos */
 section.section-iconos {
@@ -55,3 +60,4 @@ img.logo {
     width: 75px;
   }
 }
+
